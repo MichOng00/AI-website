@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Awareness Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Climate Change Awareness Dashboard</h1>
+        <p>Tracking climate change trends and helping to make a difference.</p>
+    </header>
+
+    <section>
+        <h2>Global Temperature Trends</h2>
+        <canvas id="tempChart" width="400" height="200"></canvas>
+        <p id="temp-description">Loading temperature data...</p>
+    </section>
+
+    <section>
+        <h2>Carbon Emissions Trends</h2>
+        <canvas id="emissionsChart" width="400" height="200"></canvas>
+        <p id="emissions-description">Loading carbon emissions data...</p>
+    </section>
+
+    <footer>
+        <p>Data Source: <a href="https://www.climate.gov/" target="_blank">National Climate Data</a></p>
+        <p>&copy; 2025 Climate Change Awareness</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
