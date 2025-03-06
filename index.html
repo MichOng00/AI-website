@@ -5,31 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Change Awareness Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
-        <h1>Climate Change Awareness Dashboard</h1>
-        <p>Tracking climate change trends and helping to make a difference.</p>
+        <div class="logo">🌍 Climate Dash</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Data</a>
+                    <div class="dropdown-content">
+                        <a href="#">Emissions</a>
+                        <a href="#">Impact</a>
+                        <a href="#">Actions</a>
+                    </div>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="buttons">
+            <button class="login">Log in</button>
+            <button class="signup">Get started for free</button>
+        </div>
     </header>
-
-    <section>
-        <h2>Global Temperature Trends</h2>
-        <canvas id="tempChart" width="400" height="200"></canvas>
-        <p id="temp-description">Loading temperature data...</p>
-    </section>
-
-    <section>
-        <h2>Carbon Emissions Trends</h2>
-        <canvas id="emissionsChart" width="400" height="200"></canvas>
-        <p id="emissions-description">Loading carbon emissions data...</p>
-    </section>
-
+    <main>
+        <section class="hero">
+            <h1>Empowering Action Against Climate Change</h1>
+            <p>Monitor, analyze, and act on climate data.</p>
+            <button class="cta">Learn More</button>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h3>Track Carbon Emissions</h3>
+                <p>Monitor your carbon footprint in real-time.</p>
+            </div>
+            <div class="feature">
+                <h3>Analyze Environmental Impact</h3>
+                <p>Understand how your actions affect the environment.</p>
+            </div>
+            <div class="feature">
+                <h3>Take Sustainable Actions</h3>
+                <p>Discover ways to reduce your environmental impact.</p>
+            </div>
+            <div class="feature">
+                <h3>Build a Greener Future</h3>
+                <p>Join the movement towards a sustainable planet.</p>
+            </div>
+        </section>
+        <section class="charts">
+            <h2>Climate Data Visualizations</h2>
+            <div class="chart-container">
+                <!-- Placeholder for charts -->
+                <div class="chart" id="emissions-chart">
+                    <h4>Carbon Emissions Over Time</h4>
+                    <canvas id="emissionsCanvas"></canvas>
+                </div>
+                <div class="chart" id="impact-chart">
+                    <h4>Environmental Impact Analysis</h4>
+                    <canvas id="impactCanvas"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>Data Source: <a href="https://www.climate.gov/" target="_blank">National Climate Data</a></p>
-        <p>&copy; 2025 Climate Change Awareness</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>We are dedicated to raising awareness about climate change.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@climatedash.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <a href="#"><img src="social-media-icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="social-media-icons/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="social-media-icons/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Climate Dash. All rights reserved.</p>
+        </div>
     </footer>
-
-    <script src="app.js"></script>
+    <audio id="background-music" src="assets/background-music.mp3" loop></audio>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
