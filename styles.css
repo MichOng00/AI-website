@@ -200,3 +200,19 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 10px;
 }
+
+.play-button {
+    background-color: #00ff80;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 20px;
+}
+
+.play-button:hover {
+    background-color: #00cc66;
+    transform: scale(1.05);
+}
