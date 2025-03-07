@@ -57,15 +57,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Play background music on button click
-    const playButton = document.getElementById('play-music');
+    // Play/Pause background music on button click
+    const playPauseButton = document.getElementById('play-pause-music');
     const backgroundMusic = document.getElementById('background-music');
 
-    playButton.addEventListener('click', function() {
-        backgroundMusic.play().then(() => {
-            playButton.style.display = 'none'; // Hide the button after playing
-        }).catch(error => {
-            console.error('Playback failed:', error);
-        });
+    playPauseButton.addEventListener('click', function() {
+        if (backgroundMusic.paused) {
+            backgroundMusic.play().then(() => {
+                playPauseButton.textContent = 'Pause Music';
+            }).catch(error => {
+                console.error('Playback failed:', error);
+            });
+        } else {
+            backgroundMusic.pause();
+            playPauseButton.textContent = 'Play Music';
+        }
     });
 });
